@@ -15,7 +15,7 @@ export default function Signup() {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       navigate('/chat');
-    } catch (err) {
+    } catch {
       setError('Failed to signup');
     }
   };
